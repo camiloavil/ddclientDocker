@@ -1,10 +1,11 @@
 version: '3'
 services:
   ddclient_alpine:
+    container_name: ddclient
     build:
       context: .
       dockerfile: Dockerfile
     # image: alpine:latest
     restart: unless-stopped
-    # volumes:
-    #   - .:/usr/share/nginx/html
+    volumes:
+      - .:/etc/ddclient/
