@@ -1,0 +1,7 @@
+version: '3'
+services:
+  ddclient_alpine:
+    image: alpine:latest
+    restart: unless-stopped
+    # volumes:
+    #   - .:/usr/share/nginx/html
